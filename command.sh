@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "This script is from GitHub2"
+echo "This script is from GitHub3"
 NUMBER=$(($NUMBERONE + $NUMBERTWO))
 echo $NUMBER
