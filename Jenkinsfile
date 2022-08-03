@@ -1,6 +1,6 @@
 pipeline {
   parameters {
-    string(name: "environment", defaultValue: "terraform", descroption: "Workspace/environment file to use for deployment")
+    string(name: "environment", defaultValue: "terraform", description: "Workspace/environment file to use for deployment")
     booleanParam(name: "AutoApprove", defaultValue: false, destination: "Automaticaly run apply after generating plan?")
   }
 
