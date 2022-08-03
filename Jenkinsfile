@@ -37,13 +37,13 @@ pipeline {
       //     equals expected: true, actual: params.AutoApprove
       //   }
       // }
-      steps {
-        script {
-          def plan = readFile "tfplan.txt"
-          input message: "Do you want to apply the plan?"
-          parameters: [test (name: "Plan", description: "Please, review the plan", defaultValue: plan)]
-        }
-      }
+      // steps {
+      //   script {
+      //     def plan = readFile "tfplan.txt"
+      //     input message: "Do you want to apply the plan?"
+      //     parameters: [test (name: "Plan", description: "Please, review the plan", defaultValue: plan)]
+      //   }
+      // }
     }
     stage('Apply') {
       steps {
