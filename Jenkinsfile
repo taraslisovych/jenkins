@@ -32,11 +32,11 @@ pipeline {
       }
     }
     stage('Approval') {
-      when {
-        not {
-          equals expected: true, actual: params.AutoApprove
-        }
-      }
+      // when {
+      //   not {
+      //     equals expected: true, actual: params.AutoApprove
+      //   }
+      // }
       steps {
         script {
           def plan = readFile "tfplan.txt"
